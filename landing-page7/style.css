@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*ESTILIZACÃO TAG NAV*/
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+
+}
+
+.navbar a{
+    padding: 1px;
+    text-decoration: none;
+    color: #FF914D;
+    text-transform: uppercase;
+
+
+}
+
+.logo-imagem img{
+    margin-right: 50px;
+    max-width: 20vh;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    
+}
+
+#toggler, .navbar label{
+    display: none;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        color: #FF914D;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+    .navbar label{
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        height: 22px;
+        width: 30px;
+
+    }
+
+    .navbar label span{
+        position: absolute;
+        display: inline-flex;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #FF914D;
+        transition: 0.25s ease-in-out;
+    } 
+
+    label span:nth-child(1){
+        top: 0;
+       
+    }
+
+    label span:nth-child(2){
+        top: 8px;
+        
+    }
+
+    label span:nth-child(3){
+        top: 16px;
+       
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+        
+    }
+}
+
