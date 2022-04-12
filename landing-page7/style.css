@@ -48,7 +48,7 @@
         align-items: center;
         cursor:pointer;
     }
-    #toggler:checked ~ .menu{
+    #toggler:checked .menu{
         max-height: 100%;
     }
 }
