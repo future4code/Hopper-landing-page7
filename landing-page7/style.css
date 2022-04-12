@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 
 }
@@ -14,10 +15,18 @@ html, body{
 
 
 .navbar{
+
+}
+
+/*ESTILIZACÃO TAG NAV*/
+
+.menu-navegacao{
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
     background-color: white;
     padding: 15px;
 }
@@ -47,10 +56,36 @@ html, body{
 
 @media screen and (max-width: 600px) {
     .menu {
+
+    background-color: orangered;
+    padding: 15px;
+
+}
+
+.menu-navegacao a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.lista-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler, .menu-navegacao label{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu{
+
         width: 100%;
         max-height: 0;
         overflow: hidden;
     }
+
     .list {
         flex-direction: column;
         align-items: end;
@@ -170,3 +205,20 @@ html, body{
 .form-add button{
     background-color: white;
 }
+
+    .lista-links{
+        flex-direction:column;
+        align-items: center;
+        padding: 20px;
+
+    }
+    .menu-navegacao label{
+        display: inline-flex;
+        align-items: center;
+        cursor:pointer;
+    }
+    #toggler:checked .menu{
+        max-height: 100%;
+    }
+}
+
