@@ -39,8 +39,9 @@ html, body{
     gap: 20px;
 }
 
-#checkbox-menu, .navbar label{
+#checkbox-menu, .navbar #hamburguer{
     display: none;
+
 }
 
 
@@ -57,12 +58,12 @@ html, body{
         padding: 25px;
         
     }
-    .navbar label{
+    .navbar #hamburguer{
         display: block;
         align-items: center;
         cursor: pointer;  
         color: #FF914D;
-        border-radius: 100px;
+        border-radius: 4px;
 
 
     }
@@ -81,11 +82,11 @@ html, body{
         opacity: 0;
     }
     
-    label{
+    #hamburguer {
         cursor: pointer;
         position: relative;
         display: block;
-        height: 10px;
+        height: 20px;
         width: 30px;
         background-color: #FF914D;
     }
@@ -93,18 +94,21 @@ html, body{
 }
 
 /* ESTILIZACÃO MAIN */
+/* Texto em cima do Background inicial*/
 
 .texto-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
     background-image: url(./Imagens/mulher-laranja-cartao.png);
     background-size: 100vw;
-    padding: 0px 0px 15px 0px;
+    padding: 0px 0px 8px 0px;
     
 }
 
 .texto {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 10px 5px 180px;
+    padding: 16px 10px 0 210px;
     
 }
 
@@ -128,18 +132,21 @@ html, body{
 
 }
 
+/* Formulário Abra sua Conta */
+
+
 .abra-sua-conta {
-    padding: 30px;
-    margin: 40px 50px;
-    display: flex;
-    padding: 20px;
+    width: 40vh;
+    height: 20vh;
+    margin: 25px 50px;
+    padding: 12px 20px;
     background-color: white;
-    opacity: 70%;
+    opacity: 80%;
     border-radius: 20px;
-    justify-items: center;
-    align-items: center;
+
     
 }
+
 
 #cpf {
     font-size: 12px;
@@ -148,25 +155,135 @@ html, body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#cpf label{
-    background-color: white;
-    
-}
+
 
 .formulario h2{
     font-size: 15px;
     display: flex;
-    padding: 0;
+    padding: 0 0 2px 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .formulario h6{
     font-size: 12px;
     display: flex;
-    padding: 0;
+    padding: 0 0 5px 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#cpf input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 5px;
+    width: 34vh;
+}
+
+.form-add {
+    padding: 5px 0;
+    
+} 
+
 .form-add button{
+
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 34vh;
+    border-radius: 20px;
     background-color: white;
+}
+
+/* Conta Digital */
+
+.conta-digital{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: justify;
+    padding: 30px 100px;
+}
+
+.card img{
+    max-height: 100vh;
+}
+
+.conta-digital h1{
+    font-size: 20px;
+    color: #FF914D;
+    padding: 0 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.conta-digital p{
+    font-size: 12px;
+    padding: 0 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    width: 20vh;
+    height: 40vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+        
+}
+
+.card-image {
+    /* position: absolute; */
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+    transition: transform .80s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+#img-conta img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Nossos cartões */
+
+.nossos-cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.card-cartao img{
+    padding: 5vh 0 0;
+    max-width: 20vh;
+    max-height: 100%;
+}
+
+.nossos-cartoes h1{
+    font-size: 20px;
+    color: #FF914D;
+    padding: 0 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nossos-cartoes p{
+    font-size: 12px;
+    padding: 0 0 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#img-propaganda-cartao img{
+    max-width: 100%;
+    max-height: 100%;
 }
