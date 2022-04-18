@@ -1,26 +1,25 @@
-Landingpage - Projeto em Grupo (Amanda / Mariana / Fabíola)
+## Landingpage - Projeto em Grupo (Amanda / Mariana / Fabíola)
 F4BANK
 
-O que funciona:
+### O que funciona:
 Todos os links estão funcionando;
 O site esta responsivo.
 
-O que não funciona:
-O formulário para abrir a conta não esta funcionando
+### O que não funciona:
+O formulário para abrir a conta não está ativo.
 
-Link Surge:
-https://petite-good-bye.surge.sh/
+## [Link Surge](https://petite-good-bye.surge.sh/)
 
-Imagens:
-Página inicial:
+### Imagens
+#### Página inicial
 
 ![image](https://user-images.githubusercontent.com/98291335/163875007-30646c42-df8a-4465-a603-34489ebc45bc.png)
 
-Botões Menu:
+#### Botões Menu:
 
 ![image](https://user-images.githubusercontent.com/98291335/163875096-216d84ec-694c-4bf6-95fb-83f456321b23.png)
 
-Conta Digital:
+#### Conta Digital
 
 ![image](https://user-images.githubusercontent.com/98291335/163874965-27ea2f87-0ce8-42dd-93b4-37eeb5e198a2.png)
 
