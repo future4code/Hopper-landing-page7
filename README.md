@@ -4,6 +4,7 @@
 ### O que funciona:
 Todos os links estão funcionando;
 o site está responsivo.
+Design by Mariana Abdias.
 
 ### O que não funciona:
 O formulário para abrir a conta não está ativo.
