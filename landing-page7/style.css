@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 
 }
@@ -13,7 +12,14 @@ html, body{
 
 /* ESTILIZACÃO HEADER */
 
-
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+}
 
 
 .navbar a{
@@ -42,25 +48,10 @@ html, body{
 @media screen and (max-width: 600px) {
     .menu {
 
-    background-color: orangered;
-    padding: 15px;
-
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
-    .menu{
-
         width: 100%;
         max-height: 0;
         overflow: hidden;
     }
-
     .list {
         flex-direction: column;
         align-items: end;
@@ -181,19 +172,67 @@ html, body{
     background-color: white;
 }
 
-    .lista-links{
-        flex-direction:column;
-        align-items: center;
-        padding: 20px;
-
-    }
-    .menu-navegacao label{
-        display: inline-flex;
-        align-items: center;
-        cursor:pointer;
-    }
-    #toggler:checked .menu{
-        max-height: 100%;
-    }
+/*PÁGINA NOSSOS SERVIÇOS*/
+/*MAIN div*/
+.grid-servicos{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 5% 5% 5% 5%;
 }
+
+/*MAIN img note*/
+.img-note{
+margin-bottom: 0;
+}
+
+/*MAIN sections*/
+.servicos-flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-top:3%;
+}
+
+
+/*MAIN imagem ícones*/
+
+@media (max-device-width: 480px){
+   .icone-servicos {
+    width:15px;
+    height:15px;
+    margin-bottom: 2%;
+}
+    }
+
+@media (min-device-width: 481px) and (max-device-width: 800px){
+    .icone-servicos {
+        width:25px;
+        height:25px;
+        margin-bottom: 2%;
+        }
+    }
+
+@media (min-device-width: 801px){
+    .icone-servicos {
+        width:40px;
+        height:40px;
+        margin-bottom: 2%;
+           
+    }
+       }  
+
+
+   
+
+/*MAIN textos sections*/
+.servicos-flex p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.8vw;    
+     }
+
+
 
