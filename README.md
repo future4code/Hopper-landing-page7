@@ -3,7 +3,7 @@
 
 ### O que funciona:
 Todos os links estão funcionando;
-O site esta responsivo.
+o site está responsivo.
 
 ### O que não funciona:
 O formulário para abrir a conta não está ativo.
