@@ -14,22 +14,7 @@ html, body{
 /* ESTILIZACÃO HEADER */
 
 
-.navbar{
 
-}
-
-/*ESTILIZACÃO TAG NAV*/
-
-.menu-navegacao{
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: white;
-    padding: 15px;
-}
 
 .navbar a{
     text-decoration: none;
@@ -62,21 +47,11 @@ html, body{
 
 }
 
-.menu-navegacao a{
-    text-decoration: none;
-    color: inherit;
 
-}
 
-.lista-links{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
 
-#toggler, .menu-navegacao label{
-    display: none;
-}
+
+
 
 @media screen and (max-width: 600px) {
     .menu{
