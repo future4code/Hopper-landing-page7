@@ -12,7 +12,6 @@ html, body{
 
 /* ESTILIZACÃO HEADER */
 
-
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +20,7 @@ html, body{
     background-color: white;
     padding: 15px;
 }
+
 
 .navbar a{
     text-decoration: none;
@@ -47,6 +47,7 @@ html, body{
 
 @media screen and (max-width: 600px) {
     .menu {
+
         width: 100%;
         max-height: 0;
         overflow: hidden;
