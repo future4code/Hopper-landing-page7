@@ -1,4 +1,4 @@
-## Landingpage - Projeto em Grupo (Amanda / Mariana / Fabíola)
+## Landingpage - Projeto em Grupo (Amanda Viana | Mariana Abdias | Fabíola Barcelos)
 # F4BANK
 
 ### O que funciona:
